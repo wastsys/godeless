@@ -1,1 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>godeless.space — Цифровые услуги премиум-класса</title>
+  <meta name="description" content="Telegram Stars, Premium, накрутка соцсетей, Steam, NFT, аккаунты, прокси, VPN — быстро, безопасно, надёжно." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+<!-- cursors -->
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <span class="logo-gem"></span>
+    godeless.space
+  </a>
+  <ul class="nav-links">
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#payment">Оплата</a></li>
+    <li><a href="#why">О нас</a></li>
+    <li><a href="#owner">Контакты</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://t.me/AdapterGodeless" target="_blank" class="btn-nav">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      Telegram
+    </a>
+    <button class="hamburger" id="hbg" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mob">
+  <a href="#services">Услуги</a>
+  <a href="#payment">Оплата</a>
+  <a href="#why">О нас</a>
+  <a href="#owner">Контакты</a>
+  <a href="#faq">FAQ</a>
+  <a href="https://t.me/AdapterGodeless" target="_blank">Telegram →</a>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero">
+  <canvas id="c"></canvas>
+  <div class="h-grid"></div>
+  <div class="hero-line"></div>
+
+  <div class="hero-eyebrow"><i></i>Цифровые услуги нового уровня</div>
+
+  <h1 class="hero-title">
+    <span class="t-white">godeless</span>
+    <span class="t-gold">.space</span>
+  </h1>
+
+  <p class="hero-sub">
+    Всё для цифровой жизни — в одном месте. Telegram Premium, Steam, VPN и многое другое. Оплата крипто и СБП. Мгновенно.
+  </p>
+
+  <div class="hero-cta">
+    <a href="https://t.me/AdapterGodeless" target="_blank" class="btn-gold">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      Написать в Telegram
+    </a>
+    <a href="#services" class="btn-ghost">
+      Смотреть услуги
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-n" id="cnt1">0</div>
+      <div class="stat-l">Клиентов</div>
+    </div>
+    <div class="sdiv"></div>
+    <div class="stat-item">
+      <div class="stat-n" id="cnt2">0</div>
+      <div class="stat-l">Заказов выполнено</div>
+    </div>
+    <div class="sdiv"></div>
+    <div class="stat-item">
+      <div class="stat-n">24/7</div>
+      <div class="stat-l">Поддержка</div>
+    </div>
+    <div class="sdiv"></div>
+    <div class="stat-item">
+      <div class="stat-n" id="cnt3">0</div>
+      <div class="stat-l">Рейтинг</div>
+    </div>
+  </div>
+</section>
+
+<!-- marquee -->
+<div class="mq-wrap"><div class="mq-track" id="mqt"></div></div>
+
+<!-- ═══ SERVICES ═══ -->
+<section id="services">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Каталог</div>
+      <h2 class="sec-title">Наши услуги</h2>
+      <p class="sec-sub">Весь спектр цифровых сервисов по лучшим ценам. Мгновенная обработка каждого заказа.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<div class="sec-divider rv"></div>
+
+<!-- ═══ WHY ═══ -->
+<section id="why">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Преимущества</div>
+      <h2 class="sec-title">Почему выбирают нас</h2>
+      <p class="sec-sub">Мы не просто продаём — мы строим репутацию на каждом заказе.</p>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<div class="sec-divider rv"></div>
+
+<!-- ═══ PAYMENT ═══ -->
+<section id="payment">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Оплата</div>
+      <h2 class="sec-title">Способы оплаты</h2>
+      <p class="sec-sub">Принимаем оплату через проверенные сервисы — быстро, без комиссий и лишних шагов.</p>
+    </div>
+
+    <div class="pay-grid">
+
+      <!-- CryptoBot -->
+      <div class="pay-card crypto rv d1">
+        <div class="pay-badge">Крипта</div>
+        <div class="pay-logo-wrap">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="rgba(41,182,246,0.15)" stroke="rgba(41,182,246,0.4)" stroke-width="1"/>
+            <path d="M10 12h7.5a2.5 2.5 0 0 1 0 5H10v-5zm0 5h8a2.5 2.5 0 0 1 0 5H10v-5z" fill="none" stroke="rgba(41,182,246,0.9)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="14" y1="10" x2="14" y2="12" stroke="rgba(41,182,246,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="14" y1="22" x2="14" y2="24" stroke="rgba(41,182,246,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="10" x2="18" y2="12" stroke="rgba(41,182,246,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="22" x2="18" y2="24" stroke="rgba(41,182,246,0.9)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="pay-name">CryptoBot</div>
+        <div class="pay-handle">@send</div>
+        <div class="pay-desc">Официальный бот Telegram для крипто-платежей. Перевод мгновенный — без ожидания подтверждений сети.</div>
+        <div class="pay-chips">
+          <span class="pay-chip">USDT</span>
+          <span class="pay-chip">TON</span>
+          <span class="pay-chip">BTC</span>
+          <span class="pay-chip">ETH</span>
+          <span class="pay-chip">BNB</span>
+          <span class="pay-chip">LTC</span>
+        </div>
+      </div>
+
+      <!-- xRocket -->
+      <div class="pay-card rocket rv d2">
+        <div class="pay-badge">Крипта</div>
+        <div class="pay-logo-wrap">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="rgba(255,138,0,0.12)" stroke="rgba(255,138,0,0.35)" stroke-width="1"/>
+            <path d="M16 7 C16 7 22 10 22 16 C22 20 19 23 16 25 C13 23 10 20 10 16 C10 10 16 7 16 7Z" fill="none" stroke="rgba(255,138,0,0.9)" stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="16" cy="16" r="2.5" fill="rgba(255,138,0,0.9)"/>
+            <path d="M12 22 L10 27 L13.5 25.5" fill="none" stroke="rgba(255,138,0,0.7)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="pay-name">xRocket</div>
+        <div class="pay-handle">@xrocket</div>
+        <div class="pay-desc">Крипто-кошелёк и биржа внутри Telegram. Быстрые переводы между пользователями без комиссий.</div>
+        <div class="pay-chips">
+          <span class="pay-chip">USDT</span>
+          <span class="pay-chip">TON</span>
+          <span class="pay-chip">BTC</span>
+          <span class="pay-chip">NOT</span>
+          <span class="pay-chip">DOGS</span>
+        </div>
+      </div>
+
+      <!-- СБП -->
+      <div class="pay-card sbp rv d3">
+        <div class="pay-badge">Рубли</div>
+        <div class="pay-logo-wrap">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="14" fill="rgba(34,197,94,0.1)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+            <path d="M10 16 L14 20 L22 12" stroke="rgba(34,197,94,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 11 L16 8 L24 11 L24 17 C24 21 20 24 16 25 C12 24 8 21 8 17 Z" fill="none" stroke="rgba(34,197,94,0.5)" stroke-width="1" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="pay-name">СБП</div>
+        <div class="pay-handle">Система быстрых платежей</div>
+        <div class="pay-desc">Перевод по номеру телефона через любой российский банк. Моментальное зачисление, без комиссии.</div>
+        <div class="pay-chips">
+          <span class="pay-chip">Сбербанк</span>
+          <span class="pay-chip">Тинькофф</span>
+          <span class="pay-chip">ВТБ</span>
+          <span class="pay-chip">Альфа</span>
+          <span class="pay-chip">и др.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pay-note rv d4">
+      <span class="pay-note-icon">💡</span>
+      <span>Все платежи обрабатываются вручную менеджером — пришли скриншот об оплате в <a href="https://t.me/AdapterGodeless" target="_blank" style="color:var(--gold);text-decoration:none;">Telegram</a>, и заказ будет выполнен в течение нескольких минут. <strong style="color:rgba(255,255,255,0.6);font-weight:500;">Telegram Stars не принимаются.</strong></span>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider rv"></div>
+
+<!-- ═══ OWNER ═══ -->
+<section id="owner">
+  <div class="owner-box rv">
+    <div class="owner-av">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3 18h18l-1.5-9-4.5 4-3-6-3 6-4.5-4L3 18z"/>
+        <line x1="3" y1="21" x2="21" y2="21"/>
+        <circle cx="12" cy="4" r="1"/>
+        <circle cx="3" cy="7" r="1"/>
+        <circle cx="21" cy="7" r="1"/>
+      </svg>
+    </div>
+    <div class="owner-c">
+      <div class="owner-label">Владелец проекта</div>
+      <div class="owner-name">Godeless</div>
+      <div class="owner-role">Основатель godeless.space · Есть вопросы? Пишите напрямую — отвечу лично и быстро.</div>
+      <div class="owner-handles">
+        <a href="https://t.me/watega" target="_blank" class="o-handle">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          @watega
+        </a>
+        <a href="https://t.me/websecadmin" target="_blank" class="o-handle">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          @websecadmin
+        </a>
+        <a href="https://t.me/unrealquick" target="_blank" class="o-handle">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          @unrealquick
+        </a>
+        <a href="https://t.me/cryptourbanist" target="_blank" class="o-handle nft">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          @cryptourbanist · NFT
+        </a>
+        <a href="https://t.me/tg_1001rose" target="_blank" class="o-handle nft">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          @tg_1001rose · NFT
+        </a>
+      </div>
+      <div class="owner-meta">
+        <div class="o-badge o-badge-green" id="ownerBadge">
+          <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Время ответа 1–3 мин
+        </div>
+        <div class="o-badge o-badge-time">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Онлайн 08:00 – 03:00 МСК
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider rv"></div>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="faq-layout">
+      <div class="rv">
+        <div class="eyebrow">Вопросы</div>
+        <h2 class="sec-title">Часто спрашивают</h2>
+        <p class="sec-sub">Не нашёл ответ? Напиши нам — ответим в течение минуты.</p>
+        <a href="https://t.me/AdapterGodeless" target="_blank" class="btn-nav" style="margin-top:28px;display:inline-flex;">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Задать вопрос
+        </a>
+      </div>
+      <div class="faq-list rv d2" id="faqList"></div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-divider rv"></div>
+
+<!-- ═══ CTA ═══ -->
+<section id="cta">
+  <div class="cta-box rv">
+    <h2 class="cta-title">Готов начать?</h2>
+    <p class="cta-sub">Один клик — и твой заказ уже в обработке. Без регистраций, без лишних шагов.</p>
+    <a href="https://t.me/AdapterGodeless" target="_blank" class="btn-gold" style="font-size:15px;padding:15px 36px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      Открыть Telegram
+    </a>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="foot-in">
+    <a href="#" class="foot-logo">godeless<span>.space</span></a>
+    <ul class="foot-links">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#payment">Оплата</a></li>
+      <li><a href="#why">О нас</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="https://t.me/AdapterGodeless" target="_blank">Telegram</a></li>
+    </ul>
+    <span class="foot-copy">© 2026 godeless.space</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
